@@ -1,0 +1,16 @@
+.flx {
+  display: flex;
+  align-items: center;
+}
+
+.flbx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

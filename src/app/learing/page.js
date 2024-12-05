@@ -1,10 +1,10 @@
 import DashboardLayout from "@/layouts/dashboard-layout";
-import HomePage from "@/pages/HomePage";
+import LearningPage from "@/pages/LearningPage";
 
-export default function Home() {
+export default function Learning() {
   return (
     <DashboardLayout>
-      <HomePage />
+      <LearningPage />
     </DashboardLayout>
   );
 }
