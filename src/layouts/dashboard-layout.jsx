@@ -3,9 +3,9 @@ import React from "react";
 
 export default function DashboardLayout({ children }) {
   return (
-    <div className="bg-gray-100 p-6 min-h-screen">
+    <div className="bg-gray-100 py-4 px-6 min-h-screen">
       <TopNavbar />
-      <main className="">{children}</main>
+      <main className="mt-6 wrapper">{children}</main>
     </div>
   );
 }

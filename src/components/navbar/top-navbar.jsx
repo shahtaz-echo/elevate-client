@@ -5,11 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_ITEMS, USER } from "./data";
 import { Search } from "lucide-react";
+import AccountDropdown from "../dropdown/account-dropdown";
 
 export default function TopNavbar() {
   const pathname = usePathname();
   return (
-    <nav className="flbx">
+    <nav className="flbx wrapper">
       <div className="bg-white dark:bg-white/5 py-3 pl-5 pr-6 rounded-full">
         <Link href={"/"} className="text-xl font-medium">
           #Elevate
@@ -36,9 +37,9 @@ export default function TopNavbar() {
         <button className="h-10 w-10 center rounded-full bg-white">
           <Search className="h-4 w-4" />
         </button>
-        <div>
+        <AccountDropdown>
           <img src={USER.image} className="h-10 w-10 rounded-full" />
-        </div>
+        </AccountDropdown>
       </div>
     </nav>
   );
