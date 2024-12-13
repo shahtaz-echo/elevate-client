@@ -46,3 +46,6 @@
   background-color: black;
   color: #fff;
 }
+.tr {
+  transition: 300ms;
+}

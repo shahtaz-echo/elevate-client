@@ -16,7 +16,7 @@ export default function TopNavbar() {
           #Elevate
         </Link>
       </div>
-      <div className="bg-white dark:bg-white/5 p-2 rounded-full mr-8">
+      <div className="bg-white dark:bg-white/5 p-2 rounded-full mr-8 hidden lg:block">
         <div className="flex text-sm">
           {NAV_ITEMS?.map(({ title, link }, index) => (
             <Link
