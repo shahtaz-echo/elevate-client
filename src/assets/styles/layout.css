@@ -24,7 +24,10 @@
   background-color: #fff;
   border-radius: 14px;
   padding: 24px;
-  box-shadow: 4px 2px 24px rgba(155, 155, 155, 0.1);
+  /* box-shadow: 4px 2px 24px rgba(155, 155, 155, 0.1); */
+}
+.dark .card {
+  background-color: #1d201f;
 }
 .wrapper {
   max-width: 1440px;

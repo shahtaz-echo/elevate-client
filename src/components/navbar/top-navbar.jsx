@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { NAV_ITEMS, USER } from "./data";
 import { Search } from "lucide-react";
 import AccountDropdown from "../dropdown/account-dropdown";
+import ThemeSwitcher from "../dark-mode/dark-mode-button";
 
 export default function TopNavbar() {
   const pathname = usePathname();
@@ -34,9 +35,10 @@ export default function TopNavbar() {
         </div>
       </div>
       <div className="flx gap-3">
-        <button className="h-10 w-10 center rounded-full bg-white">
+        <button className="h-10 w-10 center rounded-full bg-white dark:bg-white/5">
           <Search className="h-4 w-4" />
         </button>
+        <ThemeSwitcher />
         <AccountDropdown>
           <img src={USER.image} className="h-10 w-10 rounded-full" />
         </AccountDropdown>
