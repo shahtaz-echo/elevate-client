@@ -19,7 +19,7 @@ export default function OngoingCoursesList({ className }) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-5">
         {courses?.map((course, index) => (
           <CourseCard courseData={course} key={index} />
         ))}

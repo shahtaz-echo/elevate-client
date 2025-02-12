@@ -1,8 +1,8 @@
 import React from "react";
+import Image from "next/image";
 
 import avatar from "@/assets/images/bg.png";
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
 export default function WelcomeCard({ className }) {
   return (
     <div
@@ -22,7 +22,11 @@ export default function WelcomeCard({ className }) {
         </div>
       </div>
 
-      <Image src={avatar} className="h-[260px] w-fit object-contain" />
+      <Image
+        src={avatar}
+        className="h-[260px] w-fit object-contain"
+        alt="sudent reading books"
+      />
     </div>
   );
 }
