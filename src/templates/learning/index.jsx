@@ -1,6 +1,6 @@
 import React from "react";
-import { courses } from "../HomePage/demo-data";
-import CourseCard from "./CourseDetailsPage/course-card/course-card";
+import { courses } from "../home/demo-data";
+import CourseCard from "./course-card/course-card";
 
 export default function LearningPage() {
   return (

@@ -1,10 +1,10 @@
-import DashboardLayout from "@/layouts/dashboard-layout";
-import StudyPlansPage from "@/pages/StudyPlansPage";
+import Layout from "@/layouts/main-layout";
+import StudyPlansPage from "@/templates/study-plans";
 
 export default function StudyPlans() {
   return (
-    <DashboardLayout>
+    <Layout>
       <StudyPlansPage />
-    </DashboardLayout>
+    </Layout>
   );
 }

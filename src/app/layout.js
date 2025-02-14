@@ -4,7 +4,12 @@ import "@/assets/styles/typography.css";
 
 export const metadata = {
   title: "Elevate",
-  description: "Make your learning fun with elevate",
+  description: "Make your learning fun with Elevate",
+  icons: {
+    icon: "/favicon.svg", // For regular favicon
+    shortcut: "/favicon.svg", // For shortcut icon
+    apple: "/favicon.svg", // For Apple devices (optional)
+  },
 };
 
 export default function RootLayout({ children }) {

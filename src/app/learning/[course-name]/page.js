@@ -1,10 +1,10 @@
-import DashboardLayout from "@/layouts/dashboard-layout";
-import CourseDetailsPage from "@/pages/LearningPage/CourseDetailsPage";
+import Layout from "@/layouts/main-layout";
+import CourseDetailsPage from "@/templates/course-details";
 
 export default function Learning() {
   return (
-    <DashboardLayout>
+    <Layout>
       <CourseDetailsPage />
-    </DashboardLayout>
+    </Layout>
   );
 }

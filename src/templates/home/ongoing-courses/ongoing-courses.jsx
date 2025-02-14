@@ -1,11 +1,10 @@
-import Link from "next/link";
 import React from "react";
-import { courses } from "../demo-data";
-// import { dtBefore } from "@/lib/date-time-manupulate";
+import Link from "next/link";
+import CourseCard from "@/templates/learning/course-card/course-card";
 import { ArrowUpRight } from "lucide-react";
-import CourseCard from "@/pages/LearningPage/CourseDetailsPage/course-card/course-card";
+import { courses } from "../demo-data";
 
-export default function OngoingCoursesList({ className }) {
+export default function OngoingCourses({ className }) {
   return (
     <div className={`${className}`}>
       <div className="flex items-center justify-between mb-6">

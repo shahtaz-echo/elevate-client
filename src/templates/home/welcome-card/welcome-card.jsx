@@ -11,7 +11,10 @@ export default function WelcomeCard({ className }) {
     >
       <div className="">
         <h1>Welcome to Elevate</h1>
-        <p className="text-xl mt-2">Your personalized Learning Assistance</p>
+        <p className="text-lg mt-2 text-white/60">
+          Your personalized AI powered{" "}
+          <span className="text-lime-400 font-medium">Learning Assistance</span>
+        </p>
         <div className="mt-16 flx gap-2">
           <button className="btn bg-lime-400 hover:bg-lime-500 tr text-black/80">
             Start Learning

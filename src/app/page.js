@@ -1,10 +1,10 @@
-import DashboardLayout from "@/layouts/dashboard-layout";
-import HomePage from "@/pages/HomePage";
+import Layout from "@/layouts/main-layout";
+import HomePage from "@/templates/home";
 
 export default function Home() {
   return (
-    <DashboardLayout>
+    <Layout>
       <HomePage />
-    </DashboardLayout>
+    </Layout>
   );
 }

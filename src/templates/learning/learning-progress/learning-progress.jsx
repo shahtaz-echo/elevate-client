@@ -41,7 +41,7 @@ const chartConfig = {
   },
 };
 
-export function LearningProgress({ className }) {
+export default function LearningProgress({ className }) {
   return (
     <Card className={`${className}`}>
       <CardHeader>

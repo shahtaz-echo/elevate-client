@@ -6,42 +6,28 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import {
-  Book,
-  ChevronRight,
-  ChevronRightSquare,
-  ChevronsRight,
-  ChevronsRightIcon,
-  Clock,
-  User,
-} from "lucide-react";
+import { ChevronRight, Clock, User } from "lucide-react";
+import Link from "next/link";
 
 export default function CourseCard({ courseData }) {
-  const {
-    courseName,
-    modulesCompleted,
-    totalModules,
-    courseType,
-    instructor,
-    duration,
-  } = courseData;
-  const progress = (modulesCompleted / totalModules) * 100;
+  const { title, modules, type, instructor, duration } = courseData;
+  const progress = (modules.completed / modules.total) * 100;
 
   return (
     <Card className="w-full flex flex-col justify-between overflow-hidden transition-all duration-300 hover:shadow-lg">
       <CardHeader className="pb-4">
         <div className="flex justify-between items-start">
-          <h2 className="text-xl font-semibold line-clamp-2">{courseName}</h2>
+          <h2 className="text-xl font-semibold line-clamp-2">{title}</h2>
           <Badge
             variant={
-              courseType === "Basic"
+              type === "Basic"
                 ? "default"
-                : courseType === "Intermediate"
+                : type === "Intermediate"
                 ? "secondary"
                 : "destructive"
             }
           >
-            {courseType}
+            {type}
           </Badge>
         </div>
       </CardHeader>
@@ -53,7 +39,7 @@ export default function CourseCard({ courseData }) {
                 Progress
               </span>
               <span className="text-sm text-green-500">
-                {modulesCompleted}/{totalModules} Modules
+                {modules.completed}/{modules.total} Modules
               </span>
             </div>
             <Progress value={progress} className="h-2 w-full" />
@@ -69,14 +55,18 @@ export default function CourseCard({ courseData }) {
         </CardContent>
         <CardFooter className="dark:bg-white/10 bg-gray-800 px-6 py-3.5">
           <div className="flex items-center justify-between w-full">
-            <button className="flex items-center space-x-2">
-              <span className="text-sm font-medium text-white">
-                Continue Learning
-              </span>
-              <ChevronRight size={16} className="text-white" />
-            </button>
+            <Link
+              href={`/learning/${title?.split(" ").join("-").toLowerCase()}`}
+              className="flex items-center space-x-2 group text-white hover:text-lime-400 tr"
+            >
+              <span className="text-sm font-medium ">Continue Learning</span>
+              <ChevronRight
+                size={16}
+                className="group-hover:translate-x-1 tr"
+              />
+            </Link>
             <span className="text-xs text-white/80">
-              {modulesCompleted === totalModules
+              {modules.completed === modules.total
                 ? "Completed"
                 : `${Math.round(progress)}% Complete`}
             </span>

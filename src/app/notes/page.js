@@ -1,10 +1,10 @@
-import DashboardLayout from "@/layouts/dashboard-layout";
-import NotesPage from "@/pages/NotesPage";
+import Layout from "@/layouts/main-layout";
+import NotesPage from "@/templates/notes";
 
 export default function Notes() {
   return (
-    <DashboardLayout>
+    <Layout>
       <NotesPage />
-    </DashboardLayout>
+    </Layout>
   );
 }

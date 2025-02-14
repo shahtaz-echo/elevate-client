@@ -1,10 +1,10 @@
-import DashboardLayout from "@/layouts/dashboard-layout";
-import ProgressPage from "@/pages/ProgressPage";
+import Layout from "@/layouts/main-layout";
+import ProgressPage from "@/templates/progress";
 
 export default function Progress() {
   return (
-    <DashboardLayout>
+    <Layout>
       <ProgressPage />
-    </DashboardLayout>
+    </Layout>
   );
 }
