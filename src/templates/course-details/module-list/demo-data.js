@@ -6,10 +6,43 @@ export const moduleList = [
       {
         submodule: 1,
         title: "Introduction to Python",
+        isCompleted: true,
+        description:
+          "Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used for web development, data analysis, automation, artificial intelligence, machine learning, and more. Python's syntax is designed to be intuitive and easy to learn, making it an excellent choice for beginners.",
+        content: "",
+        books: [
+          {
+            id: 1,
+            title: "Python on Data Structure",
+            author: "Qualam Sliva",
+          },
+        ],
+        videos: [
+          {
+            id: 1,
+            title: "Python Structure",
+            tutorial: "https://youtube.com/",
+          },
+        ],
+        articles: [
+          {
+            id: 1,
+            title: "Python Structure",
+            tutorial: "https://youtube.com/",
+          },
+        ],
+        files: [
+          {
+            id: 1,
+            title: "Python Structure",
+            tutorial: "https://youtube.com/",
+          },
+        ],
       },
       {
         submodule: 2,
         title: "Data Types & Variables",
+        isCompleted: true,
       },
       {
         submodule: 3,

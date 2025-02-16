@@ -11,12 +11,12 @@ export default function WelcomeCard({ className }) {
     >
       <div className="">
         <h1>Welcome to Elevate</h1>
-        <p className="text-lg mt-2 text-white/60">
+        <p className="text-lg mt-2 dark:text-white/60 text-black/60">
           Your personalized AI powered{" "}
-          <span className="text-lime-400 font-medium">Learning Assistance</span>
+          <span className="dark:text-white text-black font-medium">Learning Assistance</span>
         </p>
         <div className="mt-16 flx gap-2">
-          <button className="btn bg-lime-400 hover:bg-lime-500 tr text-black/80">
+          <button className="btn bg-lime-400 hover:bg-lime-500 tr text-green-900">
             Start Learning
           </button>
           <button className="btn text-base gap-2">

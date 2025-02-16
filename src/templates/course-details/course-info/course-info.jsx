@@ -15,7 +15,7 @@ export default function CourseInfo({ info, className }) {
       >
         {info.type}
       </Badge>
-      <h2 className="text-2xl font-normal mt-4">{info?.title}</h2>
+      <h2 className="text-xl font-normal mt-4">{info?.title}</h2>
     </div>
   );
 }
