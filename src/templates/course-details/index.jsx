@@ -34,7 +34,7 @@ export default function CourseDetailsPage() {
       />
       <CourseInfo
         info={courseDetails}
-        className="lg:max-w-[25%] max-w-full w-full"
+        className="lg:max-w-[25%] max-w-full w-full sticky top-8 h-fit"
       />
     </div>
   );

@@ -5,11 +5,20 @@ export const moduleList = [
     children: [
       {
         submodule: 1,
-        title: "Introduction to Python",
         isCompleted: true,
+        title: "Introduction to Python",
         description:
           "Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used for web development, data analysis, automation, artificial intelligence, machine learning, and more. Python's syntax is designed to be intuitive and easy to learn, making it an excellent choice for beginners.",
-        content: "",
+        content: [
+          "History and evolution of Python",
+          "Features and advantages of Python",
+          "Installing Python and setting up the environment",
+          "Using Python's interactive shell and running scripts",
+          "Basic syntax, indentation, and comments",
+          "Variables and data types (integers, floats, strings, booleans)",
+          "Basic input and output functions (print, input)",
+          "Simple arithmetic operations and expressions",
+        ],
         books: [
           {
             id: 1,
@@ -17,25 +26,36 @@ export const moduleList = [
             author: "Qualam Sliva",
           },
         ],
-        videos: [
+        tutorials: [
           {
             id: 1,
             title: "Python Structure",
-            tutorial: "https://youtube.com/",
+            url: "https://youtube.com/",
           },
         ],
         articles: [
           {
-            id: 1,
-            title: "Python Structure",
-            tutorial: "https://youtube.com/",
+            title: "A Beginner’s Guide to Python",
+            url: "https://realpython.com/python-beginners-guide/",
+          },
+          {
+            title: "History and Features of Python",
+            url: "https://www.geeksforgeeks.org/python-introduction/",
+          },
+          {
+            title: "Setting Up Python: A Step-by-Step Guide",
+            url: "https://docs.python.org/3/using/index.html",
+          },
+          {
+            title: "Python Basics: Variables, Data Types, and Input/Output",
+            url: "https://www.w3schools.com/python/python_variables.asp",
           },
         ],
-        files: [
+        notes: [
           {
             id: 1,
-            title: "Python Structure",
-            tutorial: "https://youtube.com/",
+            title: "Advanced Python For Beginer",
+            url: "https://youtube.com/",
           },
         ],
       },

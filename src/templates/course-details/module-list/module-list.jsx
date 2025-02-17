@@ -29,14 +29,20 @@ export default function ModuleList({ className, selectedModule, setModule }) {
                   key={jndex}
                   className={`flex gap-4  tr cursor-pointer ${
                     selectedModule?.title === item?.title
-                      ? "text-lime-400"
+                      ? "dark:text-lime-400 text-lime-600"
                       : "dark:text-white/60 text-black/60 dark:hover:text-white/80 hover:text-black/80"
                   }`}
                   onClick={() => setModule(item)}
                 >
                   <div className="mt-0.5 border dark:border-white/20 border-black/30 h-[18px] w-[18px] rounded-full center">
                     {item.isCompleted && (
-                      <span className="bg-lime-400 h-2.5 w-2.5 rounded-full"></span>
+                      <span
+                        className={`h-2.5 w-2.5 rounded-full ${
+                          selectedModule?.title === item?.title
+                            ? "dark:bg-lime-400 bg-lime-600 "
+                            : "dark:bg-white/70 bg-black/60"
+                        }`}
+                      ></span>
                     )}
                   </div>
                   <span className="flex-1">{item?.title}</span>
